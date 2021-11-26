@@ -36,7 +36,7 @@
   </tr>
   <tr>
     <td class="tg-c3ow"><span style="font-style:normal">OpenCore</span></td>
-    <td class="tg-c3ow"><a href="https://github.com/acidanthera/OpenCorePkg/releases" target="_blank" rel="noopener noreferrer">0.6.9</a></td>
+    <td class="tg-c3ow"><a href="https://github.com/acidanthera/OpenCorePkg/releases" target="_blank" rel="noopener noreferrer">0.7.5</a></td>
   </tr>
   <tr>
     <td class="tg-c3ow"><span style="font-style:normal">macOS</span></td>
