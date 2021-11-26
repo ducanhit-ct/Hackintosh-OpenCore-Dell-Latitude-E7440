@@ -8,7 +8,7 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>Made By BapVuiVe</string>
+				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -18,7 +18,38 @@
 		<key>Delete</key>
 		<array/>
 		<key>Patch</key>
-		<array/>
+		<array>
+			<dict>
+				<key>Base</key>
+				<string>\_SB.PCI0.LPCB.HPET</string>
+				<key>BaseSkip</key>
+				<integer>0</integer>
+				<key>Comment</key>
+				<string>HPET _CRS to XCRS</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>X0NSUw==</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data></data>
+				<key>Replace</key>
+				<data>WENSUw==</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data></data>
+			</dict>
+		</array>
 		<key>Quirks</key>
 		<dict>
 			<key>FadtEnableReset</key>
@@ -48,7 +79,7 @@
 			<key>AvoidRuntimeDefrag</key>
 			<true/>
 			<key>DevirtualiseMmio</key>
-			<true/>
+			<false/>
 			<key>DisableSingleUser</key>
 			<false/>
 			<key>DisableVariableWrite</key>
@@ -58,7 +89,7 @@
 			<key>EnableSafeModeSlide</key>
 			<true/>
 			<key>EnableWriteUnprotector</key>
-			<false/>
+			<true/>
 			<key>ForceBooterSignature</key>
 			<false/>
 			<key>ForceExitBootServices</key>
@@ -68,48 +99,44 @@
 			<key>ProtectSecureBoot</key>
 			<false/>
 			<key>ProtectUefiServices</key>
-			<true/>
+			<false/>
 			<key>ProvideCustomSlide</key>
 			<true/>
 			<key>ProvideMaxSlide</key>
 			<integer>0</integer>
 			<key>RebuildAppleMemoryMap</key>
-			<true/>
+			<false/>
 			<key>ResizeAppleGpuBars</key>
 			<integer>-1</integer>
 			<key>SetupVirtualMap</key>
-			<false/>
+			<true/>
 			<key>SignalAppleOS</key>
 			<false/>
 			<key>SyncRuntimePermissions</key>
-			<true/>
+			<false/>
 		</dict>
 	</dict>
 	<key>DeviceProperties</key>
 	<dict>
 		<key>Add</key>
 		<dict>
-			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
-			<dict>
-				<key>device-id</key>
-				<data>8KMAAA==</data>
-				<key>layout-id</key>
-				<data>BwAAAA==</data>
-			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>BwCbPg==</data>
+				<data>BgAmCg==</data>
 				<key>device-id</key>
-				<data>yJsAAA==</data>
-				<key>force-online</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con1-alldata</key>
-				<data>AgQKAAAIAADHAwAA</data>
-				<key>framebuffer-con1-enable</key>
-				<data>AQAAAA==</data>
+				<data>EgQAAA==</data>
+				<key>framebuffer-cursormem</key>
+				<data>AACQAA==</data>
 				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1B,0x0)</key>
+			<dict>
+				<key>device-id</key>
+				<data>IJwAAA==</data>
+				<key>layout-id</key>
+				<data>NwAAAA==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -121,11 +148,11 @@
 		<array>
 			<dict>
 				<key>Arch</key>
-				<string>x86_64</string>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>Lilu.kext</string>
 				<key>Comment</key>
-				<string>V1.5.8</string>
+				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -139,11 +166,11 @@
 			</dict>
 			<dict>
 				<key>Arch</key>
-				<string>x86_64</string>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>VirtualSMC.kext</string>
 				<key>Comment</key>
-				<string>V1.2.8</string>
+				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -157,11 +184,11 @@
 			</dict>
 			<dict>
 				<key>Arch</key>
-				<string>x86_64</string>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>AppleALC.kext</string>
 				<key>Comment</key>
-				<string>V1.6.7</string>
+				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -175,65 +202,11 @@
 			</dict>
 			<dict>
 				<key>Arch</key>
-				<string>x86_64</string>
-				<key>BundlePath</key>
-				<string>BlueToolFixup.kext</string>
-				<key>Comment</key>
-				<string>V2.6.2</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/BlueToolFixup</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>x86_64</string>
-				<key>BundlePath</key>
-				<string>CPUFriend.kext</string>
-				<key>Comment</key>
-				<string>V1.2.5</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/CPUFriend</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>x86_64</string>
-				<key>BundlePath</key>
-				<string>CPUFriendDataProvider.kext</string>
-				<key>Comment</key>
-				<string>V1.0.0</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string></string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>x86_64</string>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>IntelMausi.kext</string>
 				<key>Comment</key>
-				<string>V1.0.8</string>
+				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -247,15 +220,15 @@
 			</dict>
 			<dict>
 				<key>Arch</key>
-				<string>x86_64</string>
+				<string>Any</string>
 				<key>BundlePath</key>
-				<string>NVMeFix.kext</string>
+				<string>SMCBatteryManager.kext</string>
 				<key>Comment</key>
-				<string>V1.1.0</string>
+				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/NVMeFix</string>
+				<string>Contents/MacOS/SMCBatteryManager</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -265,11 +238,11 @@
 			</dict>
 			<dict>
 				<key>Arch</key>
-				<string>x86_64</string>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>SMCProcessor.kext</string>
 				<key>Comment</key>
-				<string>V1.2.8</string>
+				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -283,11 +256,11 @@
 			</dict>
 			<dict>
 				<key>Arch</key>
-				<string>x86_64</string>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>SMCSuperIO.kext</string>
 				<key>Comment</key>
-				<string>V1.2.8</string>
+				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -301,11 +274,11 @@
 			</dict>
 			<dict>
 				<key>Arch</key>
-				<string>x86_64</string>
+				<string>Any</string>
 				<key>BundlePath</key>
-				<string>USBPorts-iMac20,1.kext</string>
+				<string>USBMap.kext</string>
 				<key>Comment</key>
-				<string>V1.0</string>
+				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -319,11 +292,65 @@
 			</dict>
 			<dict>
 				<key>Arch</key>
-				<string>x86_64</string>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>VoodooPS2Controller-R6RC2.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/VoodooPS2Controller</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>VoodooPS2Controller-R6RC2.kext/Contents/PlugIns/VoodooPS2Keyboard.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/VoodooPS2Keyboard</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>VoodooPS2Controller-R6RC2.kext/Contents/PlugIns/VoodooPS2Trackpad.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/VoodooPS2Trackpad</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
 				<key>BundlePath</key>
 				<string>WhateverGreen.kext</string>
 				<key>Comment</key>
-				<string>V1.5.6</string>
+				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -337,11 +364,29 @@
 			</dict>
 			<dict>
 				<key>Arch</key>
-				<string>x86_64</string>
+				<string>Any</string>
 				<key>BundlePath</key>
-				<string>XHCI-unsupported.kext</string>
+				<string>BrcmPatchRAM3.kext</string>
 				<key>Comment</key>
-				<string>V0.9.2</string>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/BrcmPatchRAM3</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>BrcmBluetoothInjector.kext</string>
+				<key>Comment</key>
+				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -421,7 +466,7 @@
 			<key>DisableLinkeditJettison</key>
 			<true/>
 			<key>DisableRtcChecksum</key>
-			<true/>
+			<false/>
 			<key>ExtendBTFeatureFlags</key>
 			<false/>
 			<key>ExternalDiskIcons</key>
@@ -445,7 +490,7 @@
 			<key>ThirdPartyDrives</key>
 			<false/>
 			<key>XhciPortLimit</key>
-			<false/>
+			<true/>
 		</dict>
 		<key>Scheme</key>
 		<dict>
@@ -454,7 +499,7 @@
 			<key>FuzzyMatch</key>
 			<true/>
 			<key>KernelArch</key>
-			<string>Auto</string>
+			<string>x86_64</string>
 			<key>KernelCache</key>
 			<string>Auto</string>
 		</dict>
@@ -486,11 +531,11 @@
 			<key>PollAppleHotKeys</key>
 			<false/>
 			<key>ShowPicker</key>
-			<false/>
+			<true/>
 			<key>TakeoffDelay</key>
 			<integer>0</integer>
 			<key>Timeout</key>
-			<integer>30</integer>
+			<integer>60</integer>
 		</dict>
 		<key>Debug</key>
 		<dict>
@@ -586,20 +631,18 @@
 			</dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
-				<key>EnableTRIM</key>
-				<data>dHJ1ZQ==</data>
-				<key>ForceDisplayRotationInEFI</key>
-				<integer>0</integer>
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string></string>
+				<string>-v keepsyms=1 debug=0x100</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
 				<data>ZW4tVVM6MA==</data>
 				<key>run-efi-updater</key>
 				<string>No</string>
+				<key>EnableTRIM</key>
+				<data>dHJ1ZQ==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -616,7 +659,6 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<array>
 				<string>boot-args</string>
-				<string>ForceDisplayRotationInEFI</string>
 			</array>
 		</dict>
 		<key>LegacyEnable</key>
@@ -677,7 +719,7 @@
 			<key>SystemMemoryStatus</key>
 			<string>Auto</string>
 			<key>SystemProductName</key>
-			<string>iMac20,1</string>
+			<string>MacBookPro11,1</string>
 			<key>SystemSerialNumber</key>
 			<string></string>
 			<key>SystemUUID</key>
@@ -718,9 +760,9 @@
 			<key>CustomDelays</key>
 			<false/>
 			<key>GraphicsInputMirroring</key>
-			<true/>
+			<false/>
 			<key>KeyInitialDelay</key>
-			<integer>50</integer>
+			<integer>0</integer>
 			<key>KeySubsequentDelay</key>
 			<integer>5</integer>
 			<key>PointerSpeedDiv</key>
@@ -757,7 +799,7 @@
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
-				<string>HfsPlus.efi</string>
+				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -767,7 +809,7 @@
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
-				<string>OpenCanopy.efi</string>
+				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -777,7 +819,7 @@
 				<key>Arguments</key>
 				<string></string>
 				<key>Comment</key>
-				<string>OpenRuntime.efi</string>
+				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -878,7 +920,7 @@
 			<key>DisableSecurityPolicy</key>
 			<false/>
 			<key>EnableVectorAcceleration</key>
-			<true/>
+			<false/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
 			<key>ForceOcWriteFlash</key>
@@ -886,9 +928,9 @@
 			<key>ForgeUefiSupport</key>
 			<false/>
 			<key>IgnoreInvalidFlexRatio</key>
-			<false/>
+			<true/>
 			<key>ReleaseUsbOwnership</key>
-			<false/>
+			<true/>
 			<key>ReloadOptionRoms</key>
 			<false/>
 			<key>RequestBootVarRouting</key>

@@ -1,4 +1,4 @@
-# [SUCCESS] Hackintosh Asus B460 G Gaming + Intel® Core™ i3 10100 Processors
+# [SUCCESS] Hackintosh-OpenCore-Dell-Latitude-E7440
 
 # Hardware
 
@@ -11,36 +11,36 @@
 </thead>
 <tbody>
   <tr>
-    <td class="tg-c3ow">Motherboard</td>
-    <td class="tg-c3ow"><a href="https://rog.asus.com/vn/motherboards/rog-strix/rog-strix-b460-g-gaming-model/" target="_blank" rel="noopener noreferrer">ROG STRIX B460-G GAMING</a></td>
+    <td class="tg-c3ow">Model</td>
+    <td class="tg-c3ow"><a href="https://www.dell.com/support/home/en-vn/product-support/product/latitude-e7440-ultrabook/drivers" target="_blank" rel="noopener noreferrer">Dell Latitude E7440</a></td>
   </tr>
   <tr>
     <td class="tg-c3ow"><span style="font-style:normal">CPU</span></td>
-    <td class="tg-c3ow"><a href="https://ark.intel.com/content/www/us/en/ark/products/199283/intel-core-i3-10100-processor-6m-cache-up-to-4-30-ghz.html" target="_blank" rel="noopener noreferrer">Intel® Core™ i3-10100 Processor</a></td>
+    <td class="tg-c3ow"><a href="https://ark.intel.com/content/www/us/en/ark/products/76616/intel-core-i7-4600u-processor-4m-cache-up-to-3-30-ghz.html" target="_blank" rel="noopener noreferrer">Intel® Core™ i7 4600U</a></td>
   </tr>
   <tr>
     <td class="tg-c3ow">Ram</td>
-    <td class="tg-c3ow"><a href="https://www.gskill.com/product/165/166/1536654268/F4-3200C16D-16GTZRTrident-Z-RGBDDR4-3200MHz-CL16-18-18-38-1.35V16GB-(2x8GB)" target="_blank" rel="noopener noreferrer">Trident Z RGB DDR4-3200MHz CL16-18-18-38 1.35V 16GB (2x8GB)</a></td>
-  </tr>
-   <tr>
-    <td class="tg-c3ow"><span style="font-style:normal">Wifi & Bluetooth</span></td>
-    <td class="tg-c3ow">BCM94360CS2</td>
+    <td class="tg-c3ow"><a href="" target="_blank" rel="noopener noreferrer">SK Hynix HMT451S6BFR8A 4GB</a></td>
   </tr>
   <tr>
     <td class="tg-c3ow">Graphics Card</td>
-    <td class="tg-c3ow"><span style="font-style:normal">Intel UHD Graphics 630</span></td>
+    <td class="tg-c3ow"><span style="font-style:normal">Intel® HD Graphics 4400</span></td>
   </tr>
   <tr>
-    <td class="tg-c3ow">BIOS Version</td>
-    <td class="tg-c3ow"><a href="https://rog.asus.com/vn/motherboards/rog-strix/rog-strix-b460-g-gaming-model/helpdesk_bios" target="_blank" rel="noopener noreferrer">Version 1401</a></td>
+    <td class="tg-c3ow"><span style="font-style:normal">Wifi Card</span></td>
+    <td class="tg-c3ow">AW-CB160H (BCM94360HMB)</td>
   </tr>
   <tr>
-    <td class="tg-c3ow"><span style="font-style:normal">OpenCore Version</span></td>
-    <td class="tg-c3ow"><a href="https://github.com/acidanthera/OpenCorePkg/releases" target="_blank" rel="noopener noreferrer">0.7.5</a></td>
+    <td class="tg-c3ow">BIOS</td>
+    <td class="tg-c3ow"><a href="https://www.dell.com/support/home/en-vn/product-support/product/latitude-e7440-ultrabook/drivers" target="_blank" rel="noopener noreferrer">Version	A09</a></td>
   </tr>
   <tr>
-    <td class="tg-c3ow"><span style="font-style:normal">macOS Version</span></td>
-    <td class="tg-c3ow">Monterey 12.0.1</td>
+    <td class="tg-c3ow"><span style="font-style:normal">OpenCore</span></td>
+    <td class="tg-c3ow"><a href="https://github.com/acidanthera/OpenCorePkg/releases" target="_blank" rel="noopener noreferrer">0.6.9</a></td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow"><span style="font-style:normal">macOS</span></td>
+    <td class="tg-c3ow">Catalina 10.15.7</td>
   </tr>
 </tbody>
 </table>
@@ -56,27 +56,21 @@ Working
 - [x] QE/CI
 - [x] Restart, Sleep and Shutdown
 - [x] CPU Power Management
-- [x] Ethernet Intel® I219-V 1Gb Ethernet
-- [x] Audio Jack Rear and Front (Realtek ALC S1220A)
-- [x] HDMI,DP Audio
+- [x] Ethernet Intel(R) Ethernet Connection I218-LM Ethernet
+- [x] Audio (Realtek ALC 292)
 - [x] iMessage, Facetime
-- [x] Wifi, Bluetooth, AirDrop, AirPlay, Handoff
-- [x] All Port USB and Super Speed USB 3.2
-- [x] USB Type-C
+- [x] Wifi,Bluetooth
+- [x] Airdrop,Handoff
+- [x] All Port USB and Super Speed USB 3.0
 
 Not working at the moment
 
-- [ ] USB Type-C Audio
+- [ ] Audio Jack
+- [ ] HDMI Audio
+
+Not tested
+
 
 
 # Screenshot
-
-
-![AboutThisMac](https://user-images.githubusercontent.com/68510491/141107114-1e4482aa-872c-430f-8d12-8290f3847fd2.png)
-
-![Hackintool-1](https://user-images.githubusercontent.com/68510491/141107163-620b5b1e-cdc2-4e90-9c56-2e272755a91b.png)
-
-![Geekbench](https://user-images.githubusercontent.com/68510491/141116556-f10ee7df-7794-40fb-bd84-942bd565a0fd.png)
-
-
-
+![Ảnh chụp Màn hình 2021-05-31 lúc 19 16 49](https://user-images.githubusercontent.com/68510491/120212626-6ad42580-c25c-11eb-8f4c-be3d45beb75b.png)
